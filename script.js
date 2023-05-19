@@ -7,7 +7,7 @@ function fillTable() {
             tableRow = document.createElement("tr");
         }
         var tableCell = document.createElement("td");
-        tableCell.innerText = i;
+        if (i % 2 == 0 && i != 2) tableCell.innerText = i;
         tableRow.appendChild(tableCell);
         primetable.appendChild(tableRow);
     }
