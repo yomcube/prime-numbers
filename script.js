@@ -2,7 +2,7 @@ var primetable = document.getElementById("primetable");
 var max = 100;
 function fillTable() {
     var tableRow = document.createElement("tr");
-    for (var i = 1; i < max; i++) {
+    for (var i = 1; i <= max; i++) {
         if (i % 10 == 1 && i != 1) {
             tableRow = document.createElement("tr");
         }
