@@ -2,10 +2,10 @@ table {
     margin: 0 auto;
     border: 1px solid #777;
     border-collapse: collapse;
+    width: 75vw;
 }
 td {
     font-family: 'Courier New', Courier, monospace;
-    width: 75vw;
     text-align: right;
     border: 1px solid #777;
 }
