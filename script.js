@@ -20,4 +20,3 @@ function markComposites() {
     }
 }
 fillTable();
-markComposites();
