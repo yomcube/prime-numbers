@@ -9,3 +9,7 @@ td {
     text-align: right;
     border: 1px solid #777;
 }
+.composite {
+    background-color: black;
+    color: white;
+}
