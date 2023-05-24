@@ -1,12 +1,12 @@
-var primetable = document.getElementById('primetable');
+var primetable = document.getElementById("primetable");
 var max = 1000;
 function fillTable() {
-    var tableRow = document.createElement('tr');
+    var tableRow = document.createElement("tr");
     for (var i = 1; i <= max; i++) {
         if (i % 10 == 1 && i != 1) {
             tableRow = document.createElement("tr");
         }
-        var tableCell = document.createElement('td');
+        var tableCell = document.createElement("td");
         tableCell.innerText = i;
         tableCell.id = i;
         tableRow.appendChild(tableCell);
@@ -25,7 +25,7 @@ function markComposites() {
 }
 function mark(n) {
     var elem = document.getElementById(n);
-    elem.class = 'composite';
+    elem.setAttribute("class", "composite");
 }
 fillTable();
 markComposites();
