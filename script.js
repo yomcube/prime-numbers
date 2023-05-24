@@ -16,7 +16,7 @@ function fillTable() {
 function markComposites() {
     mark(1);
     for (var i = 2; i <= max; i++) {
-        for (var n = 1; n <= max; n++) {
+        for (var n = 2; n <= max; n++) {
             if ((n * n) % i == 0 && n != i) {
                 mark(n);
             }
