@@ -14,12 +14,18 @@ function fillTable() {
     }
 }
 function markComposites() {
+    mark(1);
     for (var i = 2; i <= max; i++) {
-        for (var n = 2; n <= max; n++) {
-            if (n % i == 0 && n != i) {
-                
+        for (var n = 1; n <= max; n++) {
+            if ((n * n) % i == 0 && n != i) {
+                mark(n);
             }
         }
     }
 }
+function mark(n) {
+    var elem = document.getElementById(n);
+    elem.class = 'composite';
+}
 fillTable();
+markComposites();
