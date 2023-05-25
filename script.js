@@ -19,7 +19,7 @@ function fillTable(j) {
 }
 function markComposites(j) {
     for (var i = j; i <= max; i++) {
-        for (var n = 2; n <= max; n++) {
+        for (var n = i; n <= max; n++) {
             if (n % i == 0 && n != i) {
                 mark(n);
             }
