@@ -1,5 +1,9 @@
 var primetable = document.getElementById("primetable");
-var max = 1000;
+var maximum = document.getElementById("maximum");
+var params = (new URL(document.location)).searchParams;
+var max;
+if (!params.has("max")) { max = 1000; }
+else { max = params.get("max"); }
 function fillTable(j) {
     var tableRow = document.createElement("tr");
     for (var i = j; i <= max; i++) {
@@ -14,7 +18,6 @@ function fillTable(j) {
     }
 }
 function markComposites(j) {
-    mark(1);
     for (var i = j; i <= max; i++) {
         for (var n = 2; n <= max; n++) {
             if (n % i == 0 && n != i) {
@@ -28,4 +31,5 @@ function mark(n) {
     elem.setAttribute("class", "composite");
 }
 fillTable(1);
+mark(1);
 markComposites(2);
