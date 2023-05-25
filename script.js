@@ -27,11 +27,5 @@ function mark(n) {
     var elem = document.getElementById(n);
     elem.setAttribute("class", "composite");
 }
-function reTable() {
-    var oldmax = max;
-    max += 1000;
-    fillTable(max);
-    markComposites(max);
-}
 fillTable(1);
 markComposites(2);
