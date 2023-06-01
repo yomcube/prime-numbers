@@ -3,13 +3,11 @@ table {
     border: 1px solid #777;
     border-collapse: collapse;
     width: 75vw;
-}
-td {
+} td {
     font-family: 'Courier New', Courier, monospace;
     text-align: right;
     border: 1px solid #777;
-}
-.composite {
+} .composite {
     background-color: black;
     color: white;
 }
