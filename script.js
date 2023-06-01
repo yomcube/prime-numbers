@@ -7,19 +7,17 @@ else { max = params.get("max"); }
 function fillTable(j) {
     var tableRow = document.createElement("tr");
     for (var i = j; i <= max; i++) {
-        if (i % 10 == 1 && i != 1) {
-            tableRow = document.createElement("tr");
-        }
+        if (i % 10 == 1 && i != 1)
+            { tableRow = document.createElement("tr"); }
         var tableCell = document.createElement("td");
-        tableCell.innerText = i;
-        tableCell.id = i;
+        tableCell.innerText = tableCell.id = i;
         tableRow.appendChild(tableCell);
         primetable.appendChild(tableRow);
     }
 }
 function markComposites(j) {
     for (var i = j; i <= max; i++) {
-        for (var n = i; n <= max; n++) {
+        for (var n = i * i; n <= max; n++) {
             if (n % i == 0 && n != i) {
                 mark(n);
             }
