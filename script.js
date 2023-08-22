@@ -1,9 +1,8 @@
 var primetable = document.getElementById("primetable");
 var maximum = document.getElementById("maximum");
 var params = (new URL(document.location)).searchParams;
-var max;
-if (!params.has("max")) { max = 1000; }
-else { max = params.get("max"); }
+var max = 1000;
+if (params.has("max")) { max = params.get("max"); }
 function fillTable(j) {
     var tableRow = document.createElement("tr");
     for (var i = j; i <= max; i++) {
